@@ -7,34 +7,82 @@
 # By default start is 0 and step is 1.
 # So range(10) is the same as both range(0,10) and range(0,10,1).
 
+# Easy question 1 answered.
+start = 3
+end = 455
 
-apple_cost = 2
-banana_cost = 1.50
+multiple = sum(range(start, end + 1))
+total_sum = multiple * 42
 
-customer_apple_total = apple_cost * 5 
-customer_banana_total = banana_cost * 8
+print(multiple)
+print(total_sum)
 
-amount_paid = 20
+# Easy question 2 answered.
 
-change = amount_paid - customer_apple_total - customer_banana_total
+string = "Programminginpython"
+total = 0 
+for s in string:
+    print(f"Adding the ascii code of {s} ({ord(s)}) to total")
+    total = total + ord(s)
+    
+print(total)
 
-print(f"The total cost for the customer is ${customer_banana_total + customer_apple_total}")
-if change >= 0:
-    print("The change to be returned is: $", change)
-else:
-    print("The customer still owes: $", abs(change))
+
+# Medium Question 1 answered.
+
+fib1 = 0
+fib2 = 1
+
+num_generated = 2
+
+n = 10
+
+while num_generated < n:
+    #generate next fib number
+    num_generated = num_generated + 1
+
+print(num_generated)
 
 
 
-# start = 0
-# end = 3
 
-# total_sum = sum(range(start, end + 2))
 
-# final_result = total_sum + 10
 
-# print(total_sum)
-# print(final_result)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# apple_cost = 2
+# banana_cost = 1.50
+
+# customer_apple_total = apple_cost * 5 
+# customer_banana_total = banana_cost * 8
+
+# amount_paid = 20
+
+# change = amount_paid - customer_apple_total - customer_banana_total
+
+# print(f"The total cost for the customer is ${customer_banana_total + customer_apple_total}")
+# if change >= 0:
+#     print("The change to be returned is: $", change)
+# else:
+#     print("The customer still owes: $", abs(change))
 
 
 # total_range = sum(range(0, 3 + 1))
