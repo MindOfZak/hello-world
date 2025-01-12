@@ -44,6 +44,14 @@ while num_generated < n:
 print(num_generated)
 
 
+start = 0
+end = 100
+
+multiple = sum(range(start, end +1))
+total_sum = multiple * 10
+
+print(multiple)
+print(total_sum)
 
 
 
